@@ -1,0 +1,14 @@
+<div class="section">
+  <div class="container">
+    <% @photos.each do |photo| %>
+    <div class="">
+      <%= image_tag photo['src']['medium'] %>
+    </div>
+    <% end %>
+  </div>
+
+</div>
+
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
